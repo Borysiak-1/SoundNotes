@@ -47,7 +47,7 @@ class Add : AppCompatActivity() {
             val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault())
-            intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say something")
+            intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Podaj notatkę")
             startActivityForResult(intent, 100)
         }
 
